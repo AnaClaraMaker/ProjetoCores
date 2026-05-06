@@ -71,9 +71,10 @@
     <header>
         <h1> Cores </h1>
         <nav>
-            <a href="">Exemplo de cores</a>
+            <a href="#main">Exemplo de cores</a>
         </nav>
     </header>
+
     <main>
         <!-- Hex -->
         <section>
@@ -97,7 +98,7 @@
 
         <section>
             <h2> RGBA (com transparência)</h2>
-            <p> Digite valores RGBA (ex: <code>rgba(255,0,0,0.5)</code>)</p>
+            <p> Digite valores RGBA (ex: <code>rgba(0,0,0,0.5)</code>)</p>
             <input type="text" id="rgbaInput" placeholder="#rgba(0,0,0,0.5)">
             <div class="caixa" id="rgbaBox"></div>
         </section>
@@ -109,6 +110,7 @@
             <input type="text" id="hslInput" placeholder="#hsl(0,0%,0%)">
             <div class="caixa" id="hslBox"></div>
         </section>
+
         <!-- HSLA -->
         <section>
             <h2> HSLA(com transparência) </h2>
@@ -117,7 +119,6 @@
             <div class="caixa" id="hsla"></div>
         </section>
 
-        </section>
     </main>
 
     <script>
@@ -148,11 +149,6 @@
         document.getElementById("hslaInput").addEventListener("input", function() {
             document.getElementById("hsla").style.backgroundColor = this.value;
         });
-
-        
-
-
     </script>
 </body>
-
 </html>
