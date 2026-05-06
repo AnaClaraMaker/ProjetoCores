@@ -105,7 +105,7 @@
         <!-- HSL -->
         <section>
             <h2>HSL (hue, saturation, ligthness)</h2>
-            <p> Digite valores HSL (ex: <code>hsl(120,100,100%,50%)</code>);</p>
+            <p> Digite valores HSL (ex: <code>hsl(120,100%,50%)</code>);</p>
             <input type="text" id="hslInput" placeholder="#hsl(0,0%,0%)">
             <div class="caixa" id="hslBox"></div>
         </section>
@@ -119,6 +119,40 @@
 
         </section>
     </main>
+
+    <script>
+        /* começa o JS dentro da página */
+        /* procura no html o elemento que tem o id "hexInput" */
+        document.getElementById("hexInput")
+
+        /* Adiciona um evento no input */
+        /* Input acontece sempre que o usuário muda o texto do campo */
+        .addEventListener("input", function() {
+            /* procura a caixa que tem o id "hexBox" */
+        document.getElementById("hexBox").style.backgroundColor = this.value;
+        });
+        /* This value é o texto digitado no input atual */
+        /* procura no html o campo com id "rgbInput" */
+        document.getElementById("rgbInput").addEventListener("input", function() {
+            document.getElementById("rgbBox").style.backgroundColor = this.value;
+        });
+
+        document.getElementById("rgbaInput").addEventListener("input", function() {
+            document.getElementById("rgbaBox").style.backgroundColor = this.value;
+        });
+
+        document.getElementById("hslInput").addEventListener("input", function(){
+            document.getElementById("hslBox").style.backgroundColor = this.value;
+        });
+
+        document.getElementById("hslaInput").addEventListener("input", function() {
+            document.getElementById("hsla").style.backgroundColor = this.value;
+        });
+
+        
+
+
+    </script>
 </body>
 
 </html>
