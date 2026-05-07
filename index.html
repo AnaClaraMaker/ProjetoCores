@@ -11,19 +11,30 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
+            background: #5c039363;
 
         }
 
         header {
-            background: rgba(92, 96, 109, 0.74);
-            color: white;
+            /* background: rgba(109, 113, 127, 0.74); */
+            color: rgb(241, 238, 238);
             padding: 15px;
             text-align: center;
+            box-shadow: 1px 1px 10px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        header h1 {
+            margin: 7px;
+
         }
 
         nav a {
-            color: white;
+            color: rgb(255, 253, 253);
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -35,14 +46,25 @@
 
         main {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: auto;
+            height: auto;
+
         }
 
         section {
+           /*  color:#ffffff00; */
             margin-bottom: 40px;
-            background: whitesmoke;
+          background: rgba(116, 60, 126, 0.589); 
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.53);
+            width:400px;
+            text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+            color:#ffffff; 
+            
         }
 
         h2 {
@@ -50,11 +72,14 @@
         }
 
         .caixa {
-            width: 200px;
+
+            max-width: 400px;
+            width: 100%;
             height: 100px;
             margin-top: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;    
+            border-radius: 5px;  
+            text-shadow: 1px 1px 4px black;  
         }
 
         .input {
@@ -69,9 +94,9 @@
 
 <body>
     <header>
-        <h1> Cores </h1>
+        <h1> CORES </h1>
         <nav>
-            <a href="#main">Exemplo de cores</a>
+            <a href="cores.html">Exemplo de cores</a>
         </nav>
     </header>
 
